@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Televisori extends Prodotto {
 
@@ -18,7 +19,16 @@ public class Televisori extends Prodotto {
     }
 
     public String getInfo() {
-        return "Il televisore " + this.nome + " prodotto da " + this.marca + " al modico prezzo di " + this.prezzo 
+        if (isSmart == true) {
+            return "Il televisore " + "SmartTV " + this.nome + " prodotto da " + this.marca + " al modico prezzo di "
+                    + this.prezzo.setScale(2, RoundingMode.DOWN) + "$" + " con dimensioni " + this.heigth + "x"
+                    + this.width;
+        }
+
+        return "Il televisore " + this.nome + " prodotto da " + this.marca + " al modico prezzo di "
+                + this.prezzo.setScale(2, RoundingMode.DOWN) + "$" + " con dimensioni " + this.heigth + "x"
+                + this.width;
+
     }
 
 }
