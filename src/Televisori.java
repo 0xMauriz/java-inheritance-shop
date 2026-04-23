@@ -20,12 +20,13 @@ public class Televisori extends Prodotto {
 
     public String getInfo() {
         if (isSmart == true) {
-            return "Il televisore " + "SmartTV " + this.nome + " prodotto da " + this.marca + " al modico prezzo di "
+            return "Il televisore " + "SmartTV " + this.nome + " prodotto da " + this.marca
+                    + " tuo al modico prezzo di "
                     + this.prezzo.setScale(2, RoundingMode.DOWN) + "$" + " con dimensioni " + this.heigth + "x"
                     + this.width;
         }
 
-        return "Il televisore " + this.nome + " prodotto da " + this.marca + " al modico prezzo di "
+        return "Il televisore " + this.nome + " prodotto da " + this.marca + ", tuo al modico prezzo di "
                 + this.prezzo.setScale(2, RoundingMode.DOWN) + "$" + " con dimensioni " + this.heigth + "x"
                 + this.width;
 

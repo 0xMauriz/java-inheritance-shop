@@ -15,9 +15,9 @@ public class Smartphone extends Prodotto {
     }
 
     public String getInfo() {
-        return this.nome + " " + "creato da " + this.marca + " " + "al modico prezzo di "
-                + this.prezzo.setScale(2, RoundingMode.DOWN) + "$" + " " + "con una memoria di " + this.memoryAmount
-                + "GB";
+        return "Lo smartphone " + this.nome + " " + "con una memoria di " + this.memoryAmount
+                + "GB" + " " + "creato da " + this.marca + ", " + "tuo al modico prezzo di "
+                + this.prezzo.setScale(2, RoundingMode.DOWN) + "$";
     }
 
     public long getImei() {

@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Cuffie extends Prodotto {
 
@@ -13,6 +14,17 @@ public class Cuffie extends Prodotto {
         this.color = color;
         this.isWireless = isWireless;
 
+    }
+
+    public String getInfo() {
+        if (isWireless == true) {
+            return "Le nuove cuffie " + this.nome + " Wireless " + this.color + " prodotte da " + this.marca
+                    + ", tuo al modico prezzo di " +
+                    this.prezzo.setScale(2, RoundingMode.DOWN);
+        }
+
+        return "Le nuove cuffie " + this.nome + " " + this.color + " prodotto da " + this.marca
+                + " al modico prezzo di " + this.prezzo.setScale(2, RoundingMode.DOWN);
     }
 
 }
