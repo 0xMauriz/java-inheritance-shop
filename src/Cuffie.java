@@ -24,7 +24,7 @@ public class Cuffie extends Prodotto {
         }
 
         return "Le nuove cuffie " + this.nome + " " + this.color + " prodotto da " + this.marca
-                + " al modico prezzo di " + this.prezzo.setScale(2, RoundingMode.DOWN);
+                + ", tuo al modico prezzo di " + this.prezzo.setScale(2, RoundingMode.DOWN);
     }
 
 }
