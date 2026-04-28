@@ -18,4 +18,13 @@ public class Prodotto {
 
     }
 
+    @Override
+    public String toString() {
+        if (nome != null) {
+            return this.codice + " - " + this.nome;
+        }
+
+        return null;
+    }
+
 }

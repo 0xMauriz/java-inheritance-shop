@@ -16,7 +16,8 @@ public class Cuffie extends Prodotto {
 
     }
 
-    public String getInfo() {
+    @Override
+    public String toString() {
         if (isWireless == true) {
             return "Le nuove cuffie " + this.nome + " Wireless " + this.color + " prodotte da " + this.marca
                     + ", tuo al modico prezzo di " +

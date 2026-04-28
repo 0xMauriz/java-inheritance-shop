@@ -14,7 +14,8 @@ public class Smartphone extends Prodotto {
         this.memoryAmount = memoryAmount;
     }
 
-    public String getInfo() {
+    @Override
+    public String toString() {
         return "Lo smartphone " + this.nome + " " + "con una memoria di " + this.memoryAmount
                 + "GB" + " " + "creato da " + this.marca + ", " + "tuo al modico prezzo di "
                 + this.prezzo.setScale(2, RoundingMode.DOWN) + "$";

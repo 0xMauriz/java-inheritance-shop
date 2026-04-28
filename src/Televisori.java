@@ -3,32 +3,33 @@ import java.math.RoundingMode;
 
 public class Televisori extends Prodotto {
 
-    protected int heigth;
-    protected int width;
+    protected int pollici;
     protected boolean isSmart;
 
-    public Televisori(int codice, String nome, String marca, BigDecimal prezzo, BigDecimal iva, int heigth, int width,
+    public Televisori(int codice, String nome, String marca, BigDecimal prezzo, BigDecimal iva, int pollici,
             boolean isSmart) {
 
         super(codice, nome, marca, prezzo, iva);
 
-        this.heigth = heigth;
-        this.width = width;
+        this.pollici = pollici;
+        ;
         this.isSmart = isSmart;
 
     }
 
-    public String getInfo() {
+    @Override
+    public String toString() {
+
         if (isSmart == true) {
+
             return "Il televisore " + "SmartTV " + this.nome + " prodotto da " + this.marca
                     + ", tuo al modico prezzo di "
-                    + this.prezzo.setScale(2, RoundingMode.DOWN) + "$" + " con dimensioni " + this.heigth + "x"
-                    + this.width;
+                    + this.prezzo.setScale(2, RoundingMode.DOWN) + "$" + " con dimensioni " + this.pollici + "''";
+
         }
 
         return "Il televisore " + this.nome + " prodotto da " + this.marca + ", tuo al modico prezzo di "
-                + this.prezzo.setScale(2, RoundingMode.DOWN) + "$" + " con dimensioni " + this.heigth + "x"
-                + this.width;
+                + this.prezzo.setScale(2, RoundingMode.DOWN) + "$" + " con dimensioni " + this.pollici + "''";
 
     }
 

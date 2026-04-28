@@ -6,11 +6,11 @@ public class Main {
 
                 Televisori SharpHD = new Televisori(001, "Sharp HD", "Sharp", new BigDecimal(220.33),
                                 new BigDecimal(0.22),
-                                39, 70, true);
+                                40, true);
 
                 Televisori SamsungUltraHD = new Televisori(002, "Samsung UltraHD", "Samsung", new BigDecimal(330.22),
                                 new BigDecimal(0.22),
-                                51, 90, false);
+                                50, false);
 
                 Smartphone SamsungGalaxyS24 = new Smartphone(010, "Samsung galaxy S24", "Samsung",
                                 new BigDecimal(930.22), new BigDecimal(0.22), 356789123456789l, 256);
