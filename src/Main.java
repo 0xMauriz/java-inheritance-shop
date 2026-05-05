@@ -28,17 +28,17 @@ public class Main {
                                 new BigDecimal(0.22), "white", false);
 
                 // Smartphones
-                System.out.println(SamsungGalaxyS24.getInfo());
-                System.out.println(XiaomiXZ20.getInfo());
+                System.out.println(SamsungGalaxyS24.toString());
+                System.out.println(XiaomiXZ20.toString());
 
                 // Televisori
-                System.out.println(SharpHD.getInfo());
-                System.out.println(SamsungUltraHD.getInfo());
+                System.out.println(SharpHD.toString());
+                System.out.println(SamsungUltraHD.toString());
 
                 // Cuffie
-                System.out.println(JBL202BT.getInfo());
-                System.out.println(BeatsByDad.getInfo());
-                System.out.println(CuffieIpodNano.getInfo());
+                System.out.println(JBL202BT.toString());
+                System.out.println(BeatsByDad.toString());
+                System.out.println(CuffieIpodNano.toString());
 
         }
 
